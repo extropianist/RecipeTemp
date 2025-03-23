@@ -1,0 +1,28 @@
+{
+  "name": "tastyhub",
+  "version": "1.0.0",
+  "description": "TastyHub cooking assistant application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/src/index.js",
+    "dev:backend": "nodemon backend/src/index.js",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "recipe",
+    "cooking",
+    "schedule",
+    "gantt"
+  ],
+  "author": "TastyHub Team",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
