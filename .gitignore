@@ -1,0 +1,2 @@
+touch .gitignore
+# Then copy the .gitignore content from the root-files artifact
