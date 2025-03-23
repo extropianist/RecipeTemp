@@ -1,2 +1,10 @@
-touch .gitignore
-# Then copy the .gitignore content from the root-files artifact
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+.env
+.DS_Store
+coverage/
+build/
+dist/
+tmp/
+*.log
